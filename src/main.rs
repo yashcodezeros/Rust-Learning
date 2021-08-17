@@ -3,6 +3,10 @@
 #![allow(unused_imports)]
 #![allow(unused_must_use)]
 
+// want to run specific file then
+// 1. comment out the import of file i.e "mod filename;"
+// 2. comment out "run()" function i.e. "filemame::run()" in main() function. 
+
 // mod print;
 // mod vars;
 // mod types;
