@@ -13,7 +13,7 @@
 // mod strings;
 // mod tuples;
 // mod arrays;
-mod vectors;
+// mod vectors;
 // mod conditionals;
 // mod loops;
 // mod functions;
@@ -36,6 +36,12 @@ mod vectors;
 // mod generics;
 // mod hashmap;
 // mod hashset;
+// mod string_format;
+// mod number_guess;
+// mod methods;
+// mod traits;
+// mod into_trait;
+mod drop;
 
 fn main() {
     // print::run();
@@ -44,7 +50,7 @@ fn main() {
     // strings::run();  
     // tuples::run();
     // arrays::run();
-    vectors::run();
+    // vectors::run();
     // conditionals::run();
     // loops::run();
     // functions::run();
@@ -67,4 +73,10 @@ fn main() {
     // generics::run();
     // hashmap::run();
     // hashset::run();
+    // string_format::run();
+    // number_guess::run();
+    // methods::run();
+    // traits::run();
+    // into_trait::run();
+    drop::run();
 }

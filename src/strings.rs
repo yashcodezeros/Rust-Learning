@@ -1,6 +1,46 @@
 //Primitive str = immutable fixed-length string somewhere in memory
 //String = Growable, heap-allocated data structure - Use when you need to modify or own string data 
 
+fn strings(){
+
+    //utf-8
+    let b:&'static str = "Hello John!"; //&str = string slice
+    //a = "abc"; //cannot do that
+    //let g = a[0]; //cannot do that
+
+    for d in b.chars().rev(){
+        println!("{}",d);
+    }
+
+    if let Some(first_char) = b.chars().nth(0){
+        println!("First letter: {}",first_char);
+    }
+
+    //heap
+    //string
+    let mut letters = String::new();
+    let mut a = 'a' as u8;
+    while a <= ('z' as u8){
+        letters.push(a as char);
+        letters.push_str(",");
+        a += 1;
+    }
+    println!("{}",letters);
+
+    //&str <> String
+    let u:&str = &letters;
+
+    //concatenation
+    //String + str
+    //let z = letters + & letters;
+
+    let mut abc = "hello Josh".to_string();
+    abc.remove(0);
+    abc.push_str("!!!");
+    println!("{}",abc.replace("ello","Goodbye"));
+
+}
+
 pub fn run(){
 
     let mut hello = String::from("Hello ");
@@ -38,4 +78,6 @@ pub fn run(){
     //get length
     println!("Length: {}",hello.len());
     println!("{}",hello);
+
+    strings();
 }
