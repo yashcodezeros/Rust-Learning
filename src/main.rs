@@ -41,7 +41,13 @@
 // mod methods;
 // mod traits;
 // mod into_trait;
-mod drop;
+// mod drop;
+// mod operator_overloding;
+// mod dispatch;
+// mod lifetime;
+// mod lifetime_structure;
+// mod reference_counted_vars;
+mod mutex_thread_safe;
 
 fn main() {
     // print::run();
@@ -78,5 +84,11 @@ fn main() {
     // methods::run();
     // traits::run();
     // into_trait::run();
-    drop::run();
+    // drop::run();
+    // operator_overloding::run();
+    // dispatch::run();
+    // lifetime::run();
+    // lifetime_structure::run();
+    // reference_counted_vars::run();
+    mutex_thread_safe::run();
 }
