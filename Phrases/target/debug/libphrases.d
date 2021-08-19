@@ -1,0 +1,1 @@
+/var/www/Rust-Learning/Phrases/target/debug/libphrases.rlib: /var/www/Rust-Learning/Phrases/src/greetings/english.rs /var/www/Rust-Learning/Phrases/src/greetings/french.rs /var/www/Rust-Learning/Phrases/src/lib.rs
